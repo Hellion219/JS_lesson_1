@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<body>
+    <script>
+    // Объявляем переменные
+    var admin;
+    var name;
+    // Записываем в name "Виталий Валентинович"
+    name = "Виталий Валентинович";
+    // Присваиваем значение name admin'у
+    admin = name;
+    // Выводим оповещение admin
+    alert(admin);
+    // Функция для изменения значения admin и отображения значений переменных
+    function changeAdminAndDisplay() {
+    // Заменяем значение admin на "Роман Олегович"
+        admin = "Роман Олегович";
+    // Отображаем значения переменных admin и name
+        alert("admin: " + admin + "\nname: " + name);
+    }
+    // Создаем кнопку
+    var btn = document.createElement("BUTTON");
+    btn.innerHTML = "Нажми меня, please!";
+    btn.onclick = changeAdminAndDisplay;
+    document.body.appendChild(btn);
+    </script>
+</body>
+</html>    
